@@ -228,15 +228,15 @@ levels(newData$weekdays)
 ```
 
 ```
-## [1] "Friday"    "Monday"    "Saturday"  "Sunday"    "Thursday"  "Tuesday"  
-## [7] "Wednesday"
+## [1] "dimanche"    "jeudi"    "lundi"  "mardi"    "mercredi"  "samedi"  
+## [7] "vendredi"
 ```
 
 ```r
-levels(newData$weekdays) <- list(weekday = c("Monday", "Tuesday",
-                                             "Wednesday", 
-                                             "Thursday", "Friday"),
-                                 weekend = c("Saturday", "Sunday"))
+levels(newData$weekdays) <- list(weekday = c("lundi", "mardi",
+                                             "mercredi", 
+                                             "jeudi", "vendredi"),
+                                 weekend = c("samedi", "dimanche"))
 levels(newData$weekdays)
 ```
 
