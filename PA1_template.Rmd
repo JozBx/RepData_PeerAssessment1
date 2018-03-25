@@ -26,6 +26,7 @@ rownames(noNA) <- 1:nrow(noNA)
 head(noNA)
 dim(noNA)
 library(ggplot2)
+
 ```
 
 ## What is mean total number of steps taken per day?
@@ -130,10 +131,10 @@ So, after imputing the missing data, the new mean of total steps taken per day i
 head(newData)
 newData$weekdays <- factor(format(newData$date, "%A"))
 levels(newData$weekdays)
-levels(newData$weekdays) <- list(weekday = c("Monday", "Tuesday",
-                                             "Wednesday", 
-                                             "Thursday", "Friday"),
-                                 weekend = c("Saturday", "Sunday"))
+levels(newData$weekdays) <- list(weekday = c("lundi", "mardi",
+                                             "mercredi", 
+                                             "jeudi", "vendredi"),
+                                 weekend = c("samedi", "dimanche"))
 levels(newData$weekdays)
 table(newData$weekdays)
 ```
